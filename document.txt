@@ -1,0 +1,9 @@
+FLASK
+
+run server.py
+
+scp -r /home/leena/dev/visualsearch/train_no.csv siddhesh@192.168.1.17:
+
+spark-submit --master spark://192.168.1.66:7077 --total-executor-cores 4 --executor-memory 4g server.py
+
+0.0.0.0:5222/visualsearch?imgUrl=https://s3-ap-southeast-1.amazonaws.com/styfi-image/cache/catalog/products/17442_1496738885213_0-600x750.jpg == GET
